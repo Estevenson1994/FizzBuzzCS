@@ -26,5 +26,13 @@ namespace FizzBuzz.UnitTests.Service
             var three = _fizzbuzzService.Convert(3);
             Assert.AreEqual("Fizz", three);
         }
+
+        [Test]
+
+        public void ReturnBuzzWhenGivenValueOfFive()
+        {
+            var five = _fizzbuzzService.Convert(5);
+            Assert.AreEqual("Buzz", five);
+        }
     }
 }
