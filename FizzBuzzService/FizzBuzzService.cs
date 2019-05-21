@@ -6,7 +6,14 @@ namespace FizzBuzz.Service
     {
         public string Convert(int num)
         {
-            return num.ToString();
+            if (num % 3 == 0)
+            {
+                return "Fizz";
+            }
+            else
+            {
+                return num.ToString();
+            }
         }
     }
 }
