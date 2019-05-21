@@ -28,11 +28,17 @@ namespace FizzBuzz.UnitTests.Service
         }
 
         [Test]
-
         public void ReturnBuzzWhenGivenValueOfFive()
         {
             var five = _fizzbuzzService.Convert(5);
             Assert.AreEqual("Buzz", five);
+        }
+
+        [Test]
+        public void ReturnFizzBuzzWhenGivenValueOfFifteen()
+        {
+            var fifteen = _fizzbuzzService.Convert(15);
+            Assert.AreEqual("FizzBuzz", fifteen);
         }
     }
 }
